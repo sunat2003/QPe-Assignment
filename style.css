@@ -5,8 +5,8 @@
     box-sizing: border-box;
     font-family: "Roboto";
 }
-html{
-    overflow-x:hidden ;
+body{
+    overflow-x:hidden;
 }
 p{
     font-size:20px;
@@ -404,5 +404,8 @@ p{
 
     .footer-details{
         column-gap:30px;
+    }
+    .input-div{
+        width:100%;
     }
 }

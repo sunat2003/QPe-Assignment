@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+html{
+    overflow-x:hidden ;
+}
+p{
+    font-size:20px;
+    font-weight:300;
+}
+
+.navbar{
+    width:100%;
+    padding:10px 40px;
+    display:flex;
+    justify-content: space-between;
+    box-shadow:0px 0px 5px gray;
+    position:sticky;
+    top:0px;
+    background-color:#fff;
+    z-index:999;
+}
+
+.navbar .logo{
+    height:50px;
+    width:50px;
+    overflow:hidden;
+    border-radius:50%;
+    padding:5px;
+    border:1px solid #000;
+}
+
+.navbar .logo img{
+    width:100%;
+    height:100%;
+}
+
+.navbar .menubar{
+    display:flex;
+    align-items: center;
+    list-style: none;
+    column-gap:20px;
+}
+
+.navbar .menubar a{
+    text-decoration: none;
+    color:#000;
+    font-size:20px;
+    font-weight: 400;
+}
+
+.navbar .menubar a:hover{
+    color:gray;
+}
+
+.end-nav{
+    display: flex;
+    align-items: center;
+    column-gap:25px;
+}
+
+.end-nav i{
+   cursor: pointer;
+   font-size: 20px;
+}
+.end-nav .ham-burger{
+   display: none;
+}
+
+.toggle-bar{
+    display: none;
+}
+
+/* hero section */
+#hero-section{
+    width:100%;
+    height:90vh;
+    display:flex;
+}
+#hero-section .hero-left{
+    width:70%;
+    height:100%;
+}
+#hero-section .hero-left img{
+    width:100%;
+    height: 100%;
+}
+
+#hero-section .hero-right{
+    width:30%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap:10px;
+    padding:30px;
+}
+.hero-btn{
+    border:none;
+    outline:none;
+    background-color: #000;
+    color:#fff;
+    border-radius:5px;
+    padding:15px 30px;
+    font-size:20px;
+    cursor: pointer;
+}
+/* feature section */
+.feature-section{
+    width:100%;
+    padding:50px;
+}
+.section-heading{
+    font-size:35px;
+    font-weight:500;
+    text-align: center;
+}
+.section-heading-inner{
+    text-align: start;
+    font-size:30px;
+    font-weight:400;
+    padding:10px 0;
+}
+.frature-part{
+   padding:30px 0;
+}
+.frature-part-inner{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    padding:20px 0;
+}
+
+.frature-part-inner .frature-part-inner-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap:10px;
+    margin:0 10px;
+}
+.frature-part-inner-img img{
+    height:200px;
+    width:200px;
+    border-radius:50%;
+    transition: 0.5s ease;
+    box-shadow: 0px 0px 3px gray;
+    cursor: pointer;
+}
+.frature-part-inner-img img:hover{
+    transform: scale(110%);
+}
+/* new Feature section */
+
+.new-feature-section{
+    padding:25px 50px;
+}
+.tranding-feature-div{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:30px 0;
+}
+
+.tranding-feature-div .tranding-box{
+   width:18%;
+   display: flex;
+   flex-direction: column;
+   border-radius:5px;
+   box-shadow: 0px 0px 5px gray;
+   overflow: hidden;
+   transition: 0.5s ease;
+   cursor: pointer;
+}
+.tranding-feature-div .tranding-box:hover{
+    transform: scale(105%);
+}
+
+.tranding-box img{
+    height:200px;
+    width:100%;
+}
+.tranding-box .tranding-box-details{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    row-gap:7px;
+}
+.tranding-box-details .tranding-btn{
+    width:100%;
+    padding:10px 20px;
+    border:none;
+    outline:none;
+    background-color: rgb(19, 196, 167);
+    color:#fff;
+}
+/* mission section */
+
+.mission-section{
+    width:100%;
+    padding:50px;
+    display: flex;
+}
+.mission-section .mission-left{
+    width:50%;
+}
+.mission-section .mission-left img{
+    width:100%;
+}
+.mission-section .mission-right{
+    width:50%;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap:20px;
+}
+.makein-india-section{
+    flex-direction: row-reverse;
+}
+
+.mini-banner-section{
+    width:100%;
+    height:50vh;
+    background-image:url("./image/banner2.jpg");
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left:50px;
+}
+.mini-div{
+    padding:45px;
+    background-color: #fff;
+    width:300px;
+    display:flex;
+    flex-direction: column;
+    row-gap:10px;
+    align-items: flex-start;
+}
+/* footer started */
+
+.footer-section{
+    width:100%;
+    padding:50px;
+    display:flex;
+    flex-direction: column;
+}
+.newslater{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:30px 0;
+}
+.newslater h4{
+    font-size:20px;
+    font-weight:400;
+}
+.input-div{
+    display:flex;
+    border:2px solid #000;
+}
+.input-div input{
+    border:none;
+    outline:none;
+    padding:10px 20px;
+    font-size:18px;
+}
+.input-div button{
+    outline:none;
+    border:none;
+    padding: 10px 20px;
+    background-color: #000;
+    color:#fff;
+    font-size:20px;
+    cursor: pointer;
+}
+
+.footer-details{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    column-gap:100px;
+    padding:50px 0;
+}
+.footer-box{
+    display:flex;
+    flex-direction: column;
+    row-gap:20px;
+}
+.footer-box a{
+    text-decoration: none;
+    color:#000;
+}
+.copy-write-section{
+    padding:10px;
+}
+.copy-write-section p{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+@media(max-width:900px){
+    .navbar .menubar{
+       display:none;
+    }
+    .toggle-bar{
+        display: block;
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position:absolute;
+        top:0;
+        right:-8000px;
+        padding:50px;
+        background-color: #fff;
+        row-gap:20px;
+        transition: 0.5s ease;
+        height:100vh;
+        z-index:1000;
+    }
+    .active{
+        right:0px;
+    }
+    .navbar .toggle-bar li{
+        list-style: none;
+    }
+    .navbar .toggle-bar a{
+        text-decoration: none;
+        color:#000;
+        font-size:20px;
+        font-weight: 400;
+    }
+    .end-nav .ham-burger, .toggle-bar .close-bar{
+        display: block;
+     }
+
+     .toggle-bar .close-bar{
+        position: absolute;
+        top:50px;
+        right:50px;
+        font-size:20px;
+        cursor: pointer;
+     }
+
+    #hero-section{
+       flex-direction: column;
+    }
+    #hero-section .hero-left{
+       width:100%;
+    }
+    #hero-section .hero-right{
+       width:100%;
+    }
+    .frature-part-inner{
+        flex-wrap: wrap;
+    }
+    .frature-part-inner-img img{
+        height:150px;
+        width:150px;
+    }
+    .tranding-feature-div{
+        justify-content: center;
+
+    }
+    .tranding-feature-div .tranding-box{
+        width:100%;
+        margin:20px 0;
+    }
+    .mission-section{
+        flex-direction: column;
+    }
+    .mission-section .mission-left,.mission-section .mission-right{
+        width:100%;
+    }
+    .mini-banner-section{
+        padding:0;
+        justify-content: center;
+    }
+    
+    .feature-section,.new-feature-section,.mission-section{
+        padding:40px 20px;
+    }
+    .newslater{
+        flex-direction: column;
+        row-gap:50px;
+    }
+    .newslater h4{
+        font-size:17px;
+    }
+
+    .footer-details{
+        column-gap:30px;
+    }
+}

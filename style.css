@@ -265,6 +265,7 @@ p{
 }
 .input-div{
     display:flex;
+    justify-content: space-between;
     border:2px solid #000;
 }
 .input-div input{
@@ -406,7 +407,12 @@ p{
     .footer-details{
         column-gap:30px;
     }
+
     .input-div{
         width:100%;
+    }
+
+    .input-div button{
+        padding:10px;
     }
 }

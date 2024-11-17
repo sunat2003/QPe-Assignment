@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: "Roboto";
 }
-body{
+body,html{
     overflow-x:hidden;
 }
 p{
@@ -14,7 +14,6 @@ p{
 }
 
 .navbar{
-    width:100%;
     padding:10px 40px;
     display:flex;
     justify-content: space-between;

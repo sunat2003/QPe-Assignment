@@ -409,7 +409,13 @@ p{
     }
 
     .input-div{
-        width:100%;
+        width:300px;
+    }
+    .input-div input{
+        width:60%;
+    }
+    .input-div button{
+        width:40%;
     }
 
 }
